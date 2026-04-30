@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Where Money Goes</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        h1 { color: #0a1628; border-bottom: 3px solid #1D9E75; padding-bottom: 10px; }
+        h2 { color: #0a1628; margin-top: 32px; }
+        h3 { color: #1D9E75; }
+        .lang-switch { text-align: right; margin-bottom: 20px; }
+        .lang-switch a { color: #1D9E75; text-decoration: none; margin-left: 10px; }
+        .updated { color: #666; font-style: italic; margin-bottom: 30px; }
+        .important {
+            background: #f0f9f4;
+            border-left: 4px solid #1D9E75;
+            padding: 12px 16px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        ul { padding-left: 24px; }
+        li { margin-bottom: 8px; }
+        a { color: #1D9E75; }
+    </style>
+</head>
+<body>
+
+<div class="lang-switch">
+    <a href="privacy.html">RU</a> |
+    <a href="privacy-kz.html">KZ</a> |
+    <strong>EN</strong>
+</div>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: April 29, 2026</p>
+
+<p>
+    The <strong>"Where Money Goes"</strong> application (hereinafter — "Application")
+    is designed to help users track and analyze personal expenses. We take your data
+    privacy seriously and describe in detail what data we collect, how we use it,
+    and how we protect it.
+</p>
+
+<div class="important">
+    <strong>In one sentence:</strong> we don't sell your data to third parties,
+    don't show ads, and store your financial data only on your device.
+</div>
+
+<h2>1. What data the Application collects</h2>
+
+<h3>1.1 Transaction data (stored locally)</h3>
+<p>The Application recognizes and saves the following expense data:</p>
+<ul>
+    <li>Transaction amount</li>
+    <li>Merchant name (store, organization)</li>
+    <li>Expense category (groceries, transport, etc.)</li>
+    <li>Date and time of the operation</li>
+    <li>Type of operation (purchase, transfer, service payment)</li>
+</ul>
+<p>
+    <strong>This data is stored only on your device</strong> in a local database
+    and is not transmitted to our servers. When you uninstall the application, all
+    data is deleted with it.
+</p>
+
+<h3>1.2 Bank app screen data (via Accessibility Service)</h3>
+<p>
+    With your permission, the Application uses Accessibility Service to read the
+    contents of bank application screens (Kaspi, Halyk, Beeline, etc.) to
+    automatically recognize transactions you make.
+</p>
+<p><strong>What happens to this data:</strong></p>
+<ul>
+    <li>Screen text is sent to our secure server for recognition</li>
+    <li>The server returns the recognition result (amount, merchant, category)</li>
+    <li>The recognized transaction is stored locally on your device</li>
+    <li>Screen text is not stored and not transferred to third parties</li>
+</ul>
+
+<h3>1.3 Push notification data (via Notification Listener)</h3>
+<p>
+    With your permission, the Application reads push notifications only from bank
+    applications to recognize transactions. Notifications from other applications
+    (messengers, social networks, personal correspondence) are ignored by the
+    Application.
+</p>
+
+<h3>1.4 Subscription data (via Google Play Billing)</h3>
+<p>When subscribing, Google Play Billing transfers to us only:</p>
+<ul>
+    <li>Purchase identifier (purchase token)</li>
+    <li>Subscription type (PRO or BASIC)</li>
+    <li>Date of next auto-renewal</li>
+</ul>
+<p>
+    <strong>Bank card data is processed exclusively by Google</strong> — we don't
+    see or store it.
+</p>
+
+<h2>2. How we use the data</h2>
+
+<p>The collected data is used solely for:</p>
+<ul>
+    <li>Recognizing and categorizing your expenses</li>
+    <li>Building charts and analytics of your finances</li>
+    <li>Calculating budget progress and savings goals</li>
+    <li>Sending useful notifications (daily, monthly summaries)</li>
+    <li>Subscription management</li>
+</ul>
+
+<div class="important">
+    <strong>We do NOT:</strong>
+    <ul>
+        <li>Sell your data to third parties</li>
+        <li>Show ads in the Application</li>
+        <li>Use data for marketing purposes</li>
+        <li>Share data with social networks or ad networks</li>
+    </ul>
+</div>
+
+<h2>3. Where and how data is stored</h2>
+
+<h3>3.1 Local data</h3>
+<p>
+    All your financial data (transactions, budget, goals) is stored
+    <strong>locally on your device</strong> in an encrypted Android database. It
+    does not leave your phone.
+</p>
+
+<h3>3.2 Cloud processing for recognition</h3>
+<p>
+    For transaction recognition, the Application uses our secure server based on
+    Cloudflare Workers, which in turn calls the Anthropic Claude API for semantic
+    analysis. In doing so:
+</p>
+<ul>
+    <li>Only anonymized screen text is transmitted</li>
+    <li>Your name, card number, phone, or other identifiers are not transmitted</li>
+    <li>The server doesn't save request history after processing (cache TTL 30 days)</li>
+    <li>Data transmission is protected by HTTPS encryption</li>
+</ul>
+
+<h2>4. Third-party data sharing</h2>
+
+<table style="width:100%; border-collapse: collapse; margin: 16px 0;">
+    <tr style="background: #f5f5f5;">
+        <th style="text-align: left; padding: 10px; border: 1px solid #ddd;">Service</th>
+        <th style="text-align: left; padding: 10px; border: 1px solid #ddd;">What data</th>
+        <th style="text-align: left; padding: 10px; border: 1px solid #ddd;">Purpose</th>
+    </tr>
+    <tr>
+        <td style="padding: 10px; border: 1px solid #ddd;">Cloudflare Workers</td>
+        <td style="padding: 10px; border: 1px solid #ddd;">Bank screen text</td>
+        <td style="padding: 10px; border: 1px solid #ddd;">Transaction recognition</td>
+    </tr>
+    <tr>
+        <td style="padding: 10px; border: 1px solid #ddd;">Anthropic Claude API</td>
+        <td style="padding: 10px; border: 1px solid #ddd;">Bank screen text</td>
+        <td style="padding: 10px; border: 1px solid #ddd;">Semantic analysis</td>
+    </tr>
+    <tr>
+        <td style="padding: 10px; border: 1px solid #ddd;">Google Play Billing</td>
+        <td style="padding: 10px; border: 1px solid #ddd;">Subscription data</td>
+        <td style="padding: 10px; border: 1px solid #ddd;">Payment processing</td>
+    </tr>
+</table>
+
+<h2>5. Security</h2>
+
+<ul>
+    <li>All network requests are made via HTTPS</li>
+    <li>Local database is stored in the protected app area</li>
+    <li>Server API keys are stored in Cloudflare Secrets vault</li>
+    <li>Access to app data is restricted by the Android system</li>
+</ul>
+
+<h2>6. Your rights</h2>
+
+<ul>
+    <li><strong>Delete data</strong> — uninstalling the Application deletes all your data from the device</li>
+    <li><strong>Disable auto-recognition</strong> — disable Accessibility Service in Android settings</li>
+    <li><strong>Cancel subscription</strong> — via Google Play at any time</li>
+    <li><strong>Get a copy of your data</strong> — by requesting via support email</li>
+    <li><strong>Delete your data on our servers</strong> — by requesting via support email</li>
+</ul>
+
+<h2>7. Use of Accessibility Service</h2>
+
+<div class="important">
+    <strong>According to Google Play policy:</strong> Accessibility Service in our
+    Application is used solely for reading bank application screens for the purpose
+    of recognizing financial transactions. This is the main declared functionality
+    of the Application, without which automatic expense tracking is impossible.
+</div>
+
+<ul>
+    <li>Activates only when banking applications are opened</li>
+    <li>Does not read screens of other applications</li>
+    <li>Does not perform actions on behalf of the user</li>
+    <li>Can be disabled in Android settings at any time</li>
+</ul>
+
+<h2>8. Children</h2>
+
+<p>
+    The Application is not intended for use by children under 13. We do not
+    knowingly collect personal data from children.
+</p>
+
+<h2>9. Changes to this policy</h2>
+
+<p>
+    We may periodically update this privacy policy. We will notify you of
+    significant changes through the application.
+</p>
+
+<h2>10. Contact</h2>
+
+<ul>
+    <li>📧 Email: <a href="mailto:westcoastalmaty@gmail.com">westcoastalmaty@gmail.com</a></li>
+    <li>📱 Developer: westtel</li>
+    <li>🌍 Region: Kazakhstan, Almaty</li>
+</ul>
+
+<hr style="margin-top: 60px; border: 0; border-top: 1px solid #ddd;">
+<p style="text-align: center; color: #999; font-size: 0.9em; margin-top: 20px;">
+    © 2026 Where Money Goes. All rights reserved.
+</p>
+
+</body>
+</html>
